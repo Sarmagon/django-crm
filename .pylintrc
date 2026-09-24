@@ -1,0 +1,24 @@
+[MAIN]
+load-plugins=pylint_django
+ignore-paths=.*/migrations/*,.*/settings.py,.*/manage.py,.*/apps.py
+
+[MESSAGES CONTROL]
+disable=raw-checker-failed,
+        bad-inline-option,
+        locally-disabled,
+        file-ignored,
+        suppressed-message,
+        useless-suppression,
+        deprecated-pragma,
+        use-implicit-booleaness-not-comparison-to-string,
+        use-implicit-booleaness-not-comparison-to-zero,
+        use-symbolic-message-instead,
+        missing-module-docstring,
+        missing-class-docstring,
+        missing-function-docstring,
+        too-few-public-methods,
+        too-many-ancestors,
+        duplicate-code
+
+[FORMAT]
+max-line-length=100

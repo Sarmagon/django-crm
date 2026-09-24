@@ -1,0 +1,4 @@
+Django>=5.2,<5.3
+psycopg[binary]>=3.2,<3.3
+pylint==3.0.2
+pylint-django>=2.8,<2.9
