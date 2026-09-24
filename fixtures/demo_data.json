@@ -1,0 +1,53 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Внедрение CRM",
+      "description": "Настройка CRM-системы для отдела продаж.",
+      "cost": "85000.00"
+    }
+  },
+  {
+    "model": "ads.advertisement",
+    "pk": 1,
+    "fields": {
+      "name": "Контекстная реклама CRM",
+      "product": 1,
+      "channel": "Яндекс Директ",
+      "budget": "25000.00"
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 1,
+    "fields": {
+      "first_name": "Анна",
+      "last_name": "Иванова",
+      "phone": "+7 900 123-45-67",
+      "email": "anna.ivanova@example.com",
+      "advertisement": 1
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 1,
+    "fields": {
+      "name": "Договор на внедрение CRM № 1",
+      "product": 1,
+      "document": "",
+      "start_date": "2026-09-24",
+      "end_date": "2027-09-24",
+      "cost": "85000.00"
+    }
+  },
+  {
+    "model": "customers.customer",
+    "pk": 1,
+    "fields": {
+      "lead": 1,
+      "contract": 1,
+      "created_at": "2026-09-24T12:00:00Z"
+    }
+  }
+]
